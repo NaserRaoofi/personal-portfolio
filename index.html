@@ -17,10 +17,12 @@
     <header id="top">
         <div class="header-container">
             <h1 class="top-left-name">Naser Raoofi</h1>
-            <a href="#top" class="home-icon" title="Back to top">
-                <i class="fas fa-home" aria-hidden="true"></i>
+            <button class="scroll-to-top-btn" title="Back to top">
+                <i class="fas fa-chevron-up" aria-hidden="true"></i>
                 <span class="sr-only">Back to top</span>
-            </a>
+            </button>
+            
+            
         </div>
     </header>
     <nav>
@@ -34,7 +36,7 @@
     </nav>
     <main>
         <section id="about" class="about-me">
-            <img src="your-image.jpg" alt="Profile Image of Naser Raoofi" class="profile-image" loading="lazy">
+            <img src="./img/photo_2024-09-28_09-39-11.jpg" alt="Profile Image of ...." class="profile-image" loading="lazy">
             <div class="about-content">
                 <h2>About Me</h2>
                 <p>Hi, I'm <strong>Naser Raoofi</strong>, a dedicated and passionate full-stack web developer with a knack for creating impactful and efficient web applications. My expertise spans HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I am committed to lifelong learning and consistently refining my skills to stay at the forefront of the industry.</p>
@@ -44,26 +46,27 @@
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skill-item">
-                    <img src="html-logo.png" alt="HTML Logo" class="skill-logo" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="skill-logo" loading="lazy">
                     <p>HTML</p>
                 </div>
                 <div class="skill-item">
-                    <img src="css-logo.png" alt="CSS Logo" class="skill-logo" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" class="skill-logo" loading="lazy">
                     <p>CSS</p>
                 </div>
                 <div class="skill-item">
-                    <img src="js-logo.png" alt="JavaScript Logo" class="skill-logo" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo" loading="lazy">
                     <p>JavaScript</p>
                 </div>
                 <div class="skill-item">
-                    <img src="react-logo.png" alt="React Logo" class="skill-logo" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" class="skill-logo" loading="lazy">
                     <p>React.js</p>
                 </div>
                 <div class="skill-item">
-                    <img src="node-logo.png" alt="Node.js Logo" class="skill-logo" loading="lazy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" class="skill-logo" loading="lazy">
                     <p>Node.js</p>
                 </div>
             </div>
+            
         </section>
         <section id="project-details" class="projects-section">
             <h2>Projects</h2>
@@ -120,12 +123,31 @@
         <section id="contact" class="contact-section">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me for collaborations or inquiries:</p>
-            <ul class="contact-info">
-                <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:naser@example.com">naser@example.com</a></li>
-                <li><i class="fas fa-phone" aria-hidden="true"></i> +123 456 7890</li>
-                <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> London, UK</li>
-            </ul>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p>Email</p>
+                    <a href="mailto:sirwan.rauofi1370@gmail.com">sirwan.rauofi1370@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <p>Phone</p>
+                    <a href="tel:+1234567890">+123 456 7890</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <p>Location</p>
+                    <span>London, UK</span>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github contact-icon"></i>
+                    <p>GitHub</p>
+                    <a href="https://github.com/NaserRaoofi" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                </div>
+            </div>
         </section>
+        
+        
     </main>
 <script src="script.js"></script>                        
 </body>

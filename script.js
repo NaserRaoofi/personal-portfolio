@@ -35,3 +35,23 @@ document.getElementById('recommendation-form').addEventListener('submit', functi
     // Display a pop-up message to confirm the recommendation has been added
     alert('Thank you! Your recommendation has been successfully added.');
 });
+
+// Sticky button implementation
+window.addEventListener('scroll', function () {
+    const scrollToTopButton = document.querySelector('.scroll-to-top-btn');
+    if (window.scrollY > 200) {
+        scrollToTopButton.classList.add('visible');
+    } else {
+        scrollToTopButton.classList.remove('visible');
+    }
+});
+
+// Smooth scroll to top implementation
+const scrollToTopButton = document.querySelector('.scroll-to-top-btn');
+scrollToTopButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
