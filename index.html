@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0z4RlW7kXK9Uor7+O0yj1Rrx8i5GGj70eKMbq9fWmW7sw" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Naser Raoofi - Professional Full Stack Web Developer Portfolio showcasing projects, skills, and recommendations.">
+    <meta property="og:title" content="Naser Raoofi | Professional Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in modern web technologies. Check out my projects and get in touch.">
+    <meta property="og:image" content="your-image.jpg">
+    <meta property="og:type" content="website">
+    <title>Naser Raoofi | Professional Portfolio</title>
+</head>
+<body>
+    <header id="top">
+        <div class="header-container">
+            <h1 class="top-left-name">Naser Raoofi</h1>
+            <a href="#top" class="home-icon" title="Back to top">
+                <i class="fas fa-home" aria-hidden="true"></i>
+                <span class="sr-only">Back to top</span>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#about" aria-label="About Me">About</a></li>
+            <li><a href="#project-details" aria-label="Projects">Projects</a></li>
+            <li><a href="#skills" aria-label="Skills">Skills</a></li>
+            <li><a href="#recommendations" aria-label="Recommendations">Recommendations</a></li>
+            <li><a href="#contact" aria-label="Contact Information">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="about-me">
+            <img src="your-image.jpg" alt="Profile Image of Naser Raoofi" class="profile-image" loading="lazy">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm <strong>Naser Raoofi</strong>, a dedicated and passionate full-stack web developer with a knack for creating impactful and efficient web applications. My expertise spans HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I am committed to lifelong learning and consistently refining my skills to stay at the forefront of the industry.</p>
+            </div>
+        </section>
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="html-logo.png" alt="HTML Logo" class="skill-logo" loading="lazy">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="css-logo.png" alt="CSS Logo" class="skill-logo" loading="lazy">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="js-logo.png" alt="JavaScript Logo" class="skill-logo" loading="lazy">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="react-logo.png" alt="React Logo" class="skill-logo" loading="lazy">
+                    <p>React.js</p>
+                </div>
+                <div class="skill-item">
+                    <img src="node-logo.png" alt="Node.js Logo" class="skill-logo" loading="lazy">
+                    <p>Node.js</p>
+                </div>
+            </div>
+        </section>
+        <section id="project-details" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <article class="project-item">
+                    <h3>Project 1: Personal Portfolio Website</h3>
+                    <p>A personal portfolio showcasing my skills, projects, and contact information. Built using HTML, CSS, JavaScript, and deployed with modern CI/CD practices.</p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+                <article class="project-item">
+                    <h3>Project 2: To-Do List Application</h3>
+                    <p>A dynamic and interactive to-do list application that allows users to manage their daily tasks efficiently. Built with JavaScript, using local storage to save tasks persistently.</p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+                <article class="project-item">
+                    <h3>Project 3: Weather App</h3>
+                    <p>A weather application that fetches real-time weather data using a third-party API, providing forecasts for multiple locations in a visually appealing interface.</p>
+                    <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+            </div>
+        </section>
+        <section id="recommendations" class="recommendations-section">
+            <h2>Recommendations</h2>
+            <div class="recommendations-container">
+                <blockquote class="recommendation-item">
+                    <p class="quote">"Working with Naser Raoofi has been an absolute pleasure. Their skills and dedication are unparalleled, and they always bring creative solutions to the table."</p>
+                    <p class="author">- John Doe, Senior Developer at XYZ Company</p>
+                </blockquote>
+                <blockquote class="recommendation-item">
+                    <p class="quote">"Naser Raoofi is one of the most talented developers I have had the opportunity to work with. They are always ready to learn and take on new challenges."</p>
+                    <p class="author">- Jane Smith, Project Manager at ABC Corp</p>
+                </blockquote>
+                <blockquote class="recommendation-item">
+                    <p class="quote">"Naser Raoofi's expertise in web development and problem-solving skills made them an invaluable member of our team. Highly recommended."</p>
+                    <p class="author">- Michael Lee, CEO at StartupHub</p>
+                </blockquote>
+            </div>
+        </section>
+        <section class="add-recommendation-section">
+            <h2>Add a Recommendation</h2>
+            <form id="recommendation-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="role">Your Role:</label>
+                <input type="text" id="role" name="role" required>
+                
+                <label for="quote">Recommendation:</label>
+                <textarea id="quote" name="quote" rows="4" required></textarea>
+                
+                <button type="submit">Add Recommendation</button>
+            </form>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for collaborations or inquiries:</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:naser@example.com">naser@example.com</a></li>
+                <li><i class="fas fa-phone" aria-hidden="true"></i> +123 456 7890</li>
+                <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> London, UK</li>
+            </ul>
+        </section>
+    </main>
+<script src="script.js"></script>                        
+</body>
+</html>
